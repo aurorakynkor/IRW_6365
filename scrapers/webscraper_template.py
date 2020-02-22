@@ -7,6 +7,6 @@ def get_IRWGoesHere_jobs (job_keyword, job_location):
     job_location: String
 
     Returns:
-    job_data: list we can return to our db query, the only info we need is the raw number of jobs
+    job_count: list we can return to our db query, the only info we need is the raw number of jobs
     """
-    return job_data
+    return job_count
