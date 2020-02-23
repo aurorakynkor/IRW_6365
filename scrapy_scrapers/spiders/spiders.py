@@ -1,6 +1,7 @@
 import scrapy
 import logging
 from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
 
 
 #
@@ -84,9 +85,7 @@ class CareerBuilderSpider(scrapy.Spider):
 # Manage Spider Proceses down here
 #
 
-process = CrawlerProcess({
-    'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
-})
+process = CrawlerProcess(get_project_settings())
 
 process.crawl(MonsterSpider)
 process.crawl(CareerBuilderSpider)
