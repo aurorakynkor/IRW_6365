@@ -8,7 +8,9 @@
 import scrapy
 
 
-class ScrapyScrapersItem(scrapy.Item):
+class JobCountItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    website = scrapy.Field()
+    keyword = scrapy.Field()
+    location = scrapy.Field()
+    count = scrapy.Field()
