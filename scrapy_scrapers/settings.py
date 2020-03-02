@@ -57,25 +57,20 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_proxies.RandomProxy': 100,
     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
     'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
     'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware': 401,
 }
 
-RETRY_TIMES = 10
+RETRY_TIMES = 5
 # Retry on most error codes since proxies fail for different reasons
-RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
-
-DOWNLOADER_MIDDLEWARES = {
-    
-}
+RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 408]
 
 # Proxy list containing entries like
 # http://host1:port
 # http://username:password@host2:port
 # http://host3:port
 # ...
-PROXY_LIST = '/path/to/proxy/list.txt'
+PROXY_LIST = 'http_proxies.txt'
 
 # Proxy mode
 # 0 = Every requests have different proxy
@@ -94,9 +89,9 @@ PROXY_MODE = 0
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'scrapy_scrapers.pipelines.ScrapyScrapersPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'scrapy_scrapers.pipelines.JobItemPipeline': 1000,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -107,7 +102,7 @@ AUTOTHROTTLE_START_DELAY = 5
 AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+WAUTOTHROTTLE_TARGET_CONCURRENCY = 0.5
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
 
