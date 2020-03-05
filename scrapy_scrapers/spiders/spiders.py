@@ -13,8 +13,8 @@ from scrapy_scrapers.items import JobCountItem
 # Get Keywords and Locations from text file or DB up here and set them up so all spiders can see them
 #
 
-keywords = ["Software", "Server", "Retail", "Barista", "Civil Engineering", "Chemical Engineering", "Nurse", "Doctor", "Construction", "Lawyer", "Janitor", "Teacher", "Security Guard", "Electrician", "Bartender", "Dentist", "Accountant"]
-locations = ["Atlanta", "Tampa", "New York City", "Los Angeles", "Portland", "San Jose", "Las Vegas", "San Francisco", "New Orleans", "Boston", "Chicago", "Houston", "Phoenix", "San Antonio", "San Diego", "Austin", "Jacksonville", "Fort Worth", "Columbus", "Charlotte", "Denver", "Detroit", "Miami"]
+keywords = ["Software", "Server", "Retail", "Barista", "Civil Engineering", "Chemical Engineering", "Nurse", "Doctor", "Construction", "Lawyer", "Janitor", "Teacher", "Security Guard", "Electrician", "Bartender", "Receptionist", "Accountant", "Baker", "Customer Service Representative", "Insurance Agent"]
+locations = ["Atlanta", "Tampa", "New York City", "Los Angeles", "Portland", "San Jose", "Las Vegas", "San Francisco", "Boston", "Chicago", "Houston", "Phoenix", "San Antonio", "San Diego", "Austin", "Jacksonville", "Fort Worth", "Denver", "Detroit", "Miami"]
 
 #keywords = ["Software"]
 #locations = ["Atlanta"]
@@ -37,6 +37,8 @@ class MonsterSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
+        #Note to self, monster doesn't do 404 when it errors
+
         start_keyword = "https://www.monster.com/jobs/search/?q="
         end_keyword = response.url.find("&rad=5&where=")
         keyword = response.url[len(start_keyword) : end_keyword]
@@ -50,15 +52,27 @@ class MonsterSpider(scrapy.Spider):
         job_count = 0
         try:
             job_count = int(response.css('header.title h2.figure::text').get().replace("(", "").replace("Jobs Found)",""))
+            item = JobCountItem()
+            item['website'] = "Monster"
+            item['keyword'] = keyword
+            item['location'] = location
+            item['count'] = job_count
+            yield item
         except:
-            logging.debug(response.css('header.title h2.figure::text').get())
+            logging.warning("Monster Failed")
+            logging.warning(keyword + " " + location)
+            logging.warning(response.css('header.title h2.figure::text').get())
+            logging.warning(response.xpath('//body//p//text()').extract())
 
-        item = JobCountItem()
-        item['website'] = "Monster"
-        item['keyword'] = keyword
-        item['location'] = location
-        item['count'] = job_count
-        yield item
+            item = JobCountItem()
+            item['website'] = "Monster"
+            item['keyword'] = keyword
+            item['location'] = location
+            item['count'] = 0
+            yield item
+                
+
+           
 
 class CareerBuilderSpider(scrapy.Spider):
     name = "careerbuilder_spider"
@@ -75,6 +89,7 @@ class CareerBuilderSpider(scrapy.Spider):
             yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
+        #Note to self, career builder does 404
         start_keyword = "https://www.careerbuilder.com/jobs?posted=7&radius=5&keywords="
         end_keyword = response.url.find("&location=")
         keyword = response.url[len(start_keyword) : end_keyword]
@@ -87,17 +102,37 @@ class CareerBuilderSpider(scrapy.Spider):
         location = location.replace("%20", " ")
 
         job_count = 0
-        try:
-            job_count = int(response.css('[id="job-count"]::text').get().replace(" Jobs Found","").replace(",","").replace("More Than ",""))
-        except:
-            logging.debug(response.css('[id="job-count"]::text').get())
 
-        item = JobCountItem()
-        item['website'] = "CareerBuilder"
-        item['keyword'] = keyword
-        item['location'] = location
-        item['count'] = job_count
-        yield item
+        if response.status == 404:
+            item = JobCountItem()
+            item['website'] = "CareerBuilder"
+            item['keyword'] = keyword
+            item['location'] = location
+            item['count'] = job_count
+            yield item
+        else:
+            try:
+                job_count = int(response.css('[id="job-count"]::text').get().replace(" Jobs Found","").replace(",","").replace("More Than ",""))
+                item = JobCountItem()
+                item['website'] = "CareerBuilder"
+                item['keyword'] = keyword
+                item['location'] = location
+                item['count'] = job_count
+                yield item
+            except:
+                logging.warning("CareerBuilder Failed")
+                logging.warning(keyword + " " + location)
+                logging.warning(response.css('[id="job-count"]::text').get())
+                logging.warning(response.xpath('//body//p//text()').extract())
+
+                item = JobCountItem()
+                item['website'] = "CareerBuilder"
+                item['keyword'] = keyword
+                item['location'] = location
+                item['count'] = 0
+                yield item
+
+            
 
 class SimplyHiredSpider(scrapy.Spider):
     name = "simplyhired_spider"
@@ -127,18 +162,46 @@ class SimplyHiredSpider(scrapy.Spider):
         location = location.replace("%20", " ")
 
         job_count = 0
-        try:
-            job_count = int(response.css('span.posting-total::text').get().replace(",", ""))
-        except:
-            logging.debug(response.css('span.posting-total::text').get())
+        if response.status == 404:
+            item = JobCountItem()
+            item['website'] = "SimplyHired"
+            item['keyword'] = keyword
+            item['location'] = location
+            item['count'] = job_count
+            yield item
+        else:
+            try:
+                job_count = response.css('span.CategoryPath-total::text').get()
+                job_count2 = response.css('span.posting-total::text').get()
 
-        item = JobCountItem()
-        item['website'] = "SimplyHired"
-        item['keyword'] = keyword
-        item['location'] = location
-        item['count'] = job_count
-        yield item
+                if job_count == None:
+                    job_count = 0
+                else:
+                    job_count = job_count.replace(",", "")
+                if job_count2 == None:
+                    job_count2 = 0
+                else:
+                    job_count2 = job_count2.replace(",", "")
+
+                job_count = int(job_count)
+                job_count2 = int(job_count2)
+
+                #prints the greater of two responses
+                job_count = job_count if (job_count > job_count2) else job_count2
+
+                item = JobCountItem()
+                item['website'] = "SimplyHired"
+                item['keyword'] = keyword
+                item['location'] = location
+                item['count'] = job_count
+                yield item
         
+
+            except:
+                logging.warning(response.css('span.CategoryPath-total::text').get())
+                logging.warning(response.css('span.posting-total::text').get())
+
+           
 #
 # Manage Spider Proceses down here
 #
@@ -157,13 +220,11 @@ f.close()
 #
 # Run Scraping Jobs
 #
-
-print(len(keywords))
-print(len(locations))
-
 runner = CrawlerRunner(get_project_settings())
 
 configure_logging()
+
+logging.getLogger('scrapy').setLevel(logging.INFO)
 
 runner.crawl(MonsterSpider)
 runner.crawl(SimplyHiredSpider)
@@ -178,5 +239,10 @@ print("#################")
 
 print(time.time() - start_time)
 
-logging.debug(len(keywords))
-logging.debug(len(locations))
+print("Keywords:" + str(len(keywords)))
+print("Locations:" + str(len(locations)))
+
+print("SimplyHired Query Count:" + str(sum(1 for line in open('simplyhired_spider.jl'))))
+print("Monster Query Count:" + str(sum(1 for line in open('monster_spider.jl'))))
+print("CareerBuilder Query Count:" + str(sum(1 for line in open('careerbuilder_spider.jl'))))
+

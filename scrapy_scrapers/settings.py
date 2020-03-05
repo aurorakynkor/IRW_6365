@@ -57,13 +57,20 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_proxies.RandomProxy': 100,
     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
+    #'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
+    'scrapy_random_useragent_pro.middleware.RandomUserAgentMiddleware': 400,
     'scrapy_fake_useragent.middleware.RetryUserAgentMiddleware': 401,
 }
+
+RANDOM_UA_DEFAULT_TYPE = "desktop"
+RANDOM_UA_ENABLED = True
+RANDOM_UA_ENABLED = True
 
 RETRY_TIMES = 5
 # Retry on most error codes since proxies fail for different reasons
 RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 408]
+
+HTTPERROR_ALLOWED_CODES  = [404]
 
 # Proxy list containing entries like
 # http://host1:port
@@ -99,7 +106,7 @@ AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-AUTOTHROTTLE_MAX_DELAY = 60
+AUTOTHROTTLE_MAX_DELAY = 30
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
 WAUTOTHROTTLE_TARGET_CONCURRENCY = 0.5
