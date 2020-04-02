@@ -3,6 +3,8 @@ import scrapy
 import logging
 import time
 import requests
+import pandas as pd
+import numpy as np
 from scrapy.crawler import CrawlerRunner
 from scrapy.utils.project import get_project_settings
 from twisted.internet import reactor, defer
@@ -13,11 +15,8 @@ from scrapy_scrapers.items import JobCountItem
 # Get Keywords and Locations from text file or DB up here and set them up so all spiders can see them
 #
 
-keywords = ["Software", "Server", "Retail", "Barista", "Civil Engineering", "Chemical Engineering", "Nurse", "Doctor", "Construction", "Lawyer", "Janitor", "Teacher", "Security Guard", "Electrician", "Bartender", "Receptionist", "Accountant", "Baker", "Customer Service Representative", "Insurance Agent"]
-locations = ["Atlanta", "Tampa", "New York City", "Los Angeles", "Portland", "San Jose", "Las Vegas", "San Francisco", "Boston", "Chicago", "Houston", "Phoenix", "San Antonio", "San Diego", "Austin", "Jacksonville", "Fort Worth", "Denver", "Detroit", "Miami"]
-
-#keywords = ["Software"]
-#locations = ["Atlanta"]
+locations = []
+keywords = []
 
 #
 # Define Spiders Here
@@ -211,12 +210,24 @@ start_time = time.time()
 # Gets Proxy List 
 #
 my_file = requests.get(url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=no&anonymity=elite")
-print(my_file.text)
 file_lines = [''.join(["http://",str(x), '\n']) for x in my_file.text.splitlines()]
 f = open("http_proxies.txt", 'w')
 f.writelines(file_lines) 
 f.close()
 
+#
+# Load locations from csv
+#
+
+locations = pd.read_csv('city_population_data.csv')['city_state'].to_numpy()
+
+#
+# Load Keywords from csv
+#
+
+f = open("jobs_list.txt", "r")
+for x in f:
+    keywords.append(x)
 #
 # Run Scraping Jobs
 #

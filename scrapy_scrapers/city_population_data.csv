@@ -1,0 +1,601 @@
+,city_state,population
+9730,"New York, NY",19354922.0
+14121,"Los Angeles, CA",12815475.0
+16289,"Chicago, IL",8675982.0
+2882,"Miami, FL",6381966.0
+4464,"Dallas, TX",5733259.0
+11154,"Philadelphia, PA",5637884.0
+5553,"Houston, TX",5446468.0
+697,"Washington, DC",5289420.0
+17464,"Atlanta, GA",5228750.0
+19203,"Boston, MA",4637537.0
+19443,"Phoenix, AZ",4081849.0
+106,"Seattle, WA",3643765.0
+13995,"San Francisco, CA",3603761.0
+24912,"Detroit, MI",3522206.0
+12999,"San Diego, CA",3210314.0
+24417,"Minneapolis, MN",2926757.0
+2065,"Tampa, FL",2804240.0
+12400,"Denver, CO",2787266.0
+9496,"Brooklyn, NY",2629150.0
+9216,"Queens, NY",2333054.0
+20475,"Baltimore, MD",2170504.0
+14236,"Riverside, CA",2084749.0
+23638,"St. Louis, MO",2078283.0
+11731,"Las Vegas, NV",2073045.0
+28361,"Portland, OR",2052796.0
+4576,"San Antonio, TX",2002530.0
+12957,"Sacramento, CA",1854698.0
+14283,"San Jose, CA",1821899.0
+2196,"Orlando, FL",1776841.0
+22568,"Cleveland, OH",1730363.0
+10478,"Pittsburgh, PA",1715297.0
+22002,"Cincinnati, OH",1648254.0
+9308,"Manhattan, NY",1643734.0
+5600,"Austin, TX",1638716.0
+23117,"Kansas City, MO",1615621.0
+17945,"Indianapolis, IN",1564699.0
+21652,"Columbus, OH",1528314.0
+12320,"Virginia Beach, VA",1480383.0
+7152,"Charlotte, NC",1467362.0
+9283,"Bronx, NY",1455720.0
+1150,"Milwaukee, WI",1377808.0
+11641,"Providence, RI",1206642.0
+2646,"Jacksonville, FL",1156291.0
+22698,"Salt Lake City, UT",1098400.0
+8671,"Nashville, TN",1076645.0
+8810,"Memphis, TN",1068873.0
+12233,"Richmond, VA",1059907.0
+5885,"New Orleans, LA",1029123.0
+6919,"Raleigh, NC",1018336.0
+27640,"Louisville, KY",1011696.0
+20983,"Oklahoma City, OK",955998.0
+20009,"Bridgeport, CT",938406.0
+9353,"Buffalo, NY",926261.0
+20060,"Hartford, CT",914751.0
+5800,"Fort Worth, TX",874168.0
+19436,"Tucson, AZ",868391.0
+4478,"El Paso, TX",845674.0
+1928,"Honolulu, HI",833671.0
+8204,"Omaha, NE",827786.0
+4348,"McAllen, TX",800904.0
+3742,"Albuquerque, NM",758523.0
+14439,"Birmingham, AL",744189.0
+22131,"Dayton, OH",718169.0
+9493,"Rochester, NY",711998.0
+2492,"Sarasota, FL",706245.0
+14036,"Fresno, CA",698021.0
+10988,"Allentown, PA",682899.0
+21235,"Tulsa, OK",672054.0
+12949,"Concord, CA",654770.0
+2519,"Cape Coral, FL",630134.0
+19236,"Springfield, MA",628076.0
+12487,"Colorado Springs, CO",623946.0
+27330,"Charleston, SC",616085.0
+25278,"Grand Rapids, MI",602694.0
+13138,"Mission Viejo, CA",600474.0
+8899,"Albany, NY",597270.0
+8569,"Knoxville, TN",585249.0
+5942,"Baton Rouge, LA",583613.0
+13984,"Bakersfield, CA",574362.0
+22929,"Ogden, UT",573632.0
+20096,"New Haven, CT",568144.0
+27561,"Columbia, SC",566166.0
+21498,"Akron, OH",565920.0
+22660,"Provo, UT",503695.0
+19241,"Worcester, MA",498997.0
+19354,"Mesa, AZ",496401.0
+2423,"Palm Bay, FL",489912.0
+22161,"Toledo, OH",488672.0
+13897,"Murrieta, CA",483681.0
+25976,"Wichita, KS",483057.0
+18352,"Des Moines, IA",481222.0
+9677,"Staten Island, NY",476015.0
+13639,"Long Beach, CA",469450.0
+27411,"Greenville, SC",467894.0
+15048,"Little Rock, AR",442699.0
+10252,"Harrisburg, PA",441580.0
+4490,"Denton, TX",440146.0
+1010,"Madison, WI",439553.0
+11708,"Reno, NV",433271.0
+2790,"Port St. Lucie, FL",432589.0
+14178,"Oakland, CA",425195.0
+7281,"Winston-Salem, NC",416581.0
+12906,"Indio, CA",408097.0
+6883,"Durham, NC",407575.0
+8888,"Syracuse, NY",407259.0
+8656,"Chattanooga, TN",407182.0
+10834,"Lancaster, PA",404525.0
+317,"Spokane, WA",403043.0
+2714,"Palm Coast, FL",401757.0
+5207,"Arlington, TX",396394.0
+2916,"Bonita Springs, FL",396220.0
+9429,"Poughkeepsie, NY",396041.0
+13253,"Stockton, CA",394467.0
+13428,"Oxnard, CA",389792.0
+17467,"Augusta, GA",389383.0
+10109,"Scranton, PA",389022.0
+19916,"Boise, ID",385218.0
+12926,"Modesto, CA",381398.0
+2116,"Kissimmee, FL",374231.0
+21828,"Youngstown, OH",373728.0
+12377,"Aurora, CO",366623.0
+14098,"Anaheim, CA",352497.0
+13039,"Lancaster, CA",349218.0
+13071,"Victorville, CA",346948.0
+2097,"Pensacola, FL",344400.0
+15317,"Fayetteville, AR",341890.0
+27111,"San Juan, PR",341657.0
+4868,"Corpus Christi, TX",341435.0
+26692,"Jackson, MS",338185.0
+7383,"Greensboro, NC",335588.0
+25073,"Flint, MI",335354.0
+13037,"Santa Ana, CA",334136.0
+17806,"Fort Wayne, IN",328564.0
+24893,"Ann Arbor, MI",326288.0
+7223,"Fayetteville, NC",324700.0
+14149,"Santa Rosa, CA",321908.0
+25114,"Lansing, MI",320928.0
+14684,"Mobile, AL",318084.0
+27657,"Lexington, KY",315939.0
+14867,"Huntsville, AL",309716.0
+14113,"Santa Clarita, CA",309378.0
+7074,"Asheville, NC",309250.0
+24002,"St. Paul, MN",306621.0
+12817,"Fort Collins, CO",303184.0
+13695,"Antioch, CA",302885.0
+11661,"Henderson, NV",302539.0
+3174,"Trenton, NJ",296869.0
+2926,"Lakeland, FL",291281.0
+6237,"Shreveport, LA",287432.0
+18991,"Davenport, IA",287413.0
+23258,"Springfield, MO",287222.0
+5133,"Plano, TX",286143.0
+15578,"Rockford, IL",285562.0
+3314,"Newark, NJ",285154.0
+8274,"Lincoln, NE",285118.0
+15560,"Round Lake Beach, IL",284607.0
+17789,"South Bend, IN",281100.0
+17475,"Savannah, GA",280082.0
+13359,"Irvine, CA",277453.0
+21842,"Canton, OH",271184.0
+3295,"Jersey City, NJ",270753.0
+13630,"Chula Vista, CA",270471.0
+28146,"Eugene, OR",267568.0
+10939,"Reading, PA",267300.0
+6201,"Lafayette, LA",265746.0
+2197,"St. Petersburg, FL",263255.0
+4689,"Lubbock, TX",262505.0
+16672,"Peoria, IL",262010.0
+27558,"Myrtle Beach, SC",260487.0
+5820,"Laredo, TX",260244.0
+28317,"Salem, OR",259816.0
+17000,"Columbus, GA",259160.0
+14440,"Montgomery, AL",255908.0
+19625,"Chandler, AZ",253458.0
+6624,"Anchorage, AK",253421.0
+2524,"Tallahassee, FL",253030.0
+6727,"Concord, NC",250186.0
+19353,"Scottsdale, AZ",249950.0
+4705,"Killeen, TX",247489.0
+19734,"Glendale, AZ",246709.0
+7017,"Wilmington, NC",245910.0
+2451,"Winter Haven, FL",245237.0
+12081,"Norfolk, VA",244703.0
+11663,"North Las Vegas, NV",242975.0
+19374,"Gilbert, AZ",242354.0
+3361,"Atlantic City, NJ",241363.0
+19267,"Barnstable Town, MA",241132.0
+11876,"Chesapeake, VA",240397.0
+4444,"Irving, TX",240373.0
+2488,"Hialeah, FL",239673.0
+4581,"Garland, TX",238002.0
+4221,"McKinney, TX",235134.0
+13855,"Fremont, CA",234962.0
+14204,"Visalia, CA",234573.0
+11561,"York, PA",234245.0
+494,"Kennewick, WA",232915.0
+18072,"Evansville, IN",232285.0
+11695,"Paradise, NV",231858.0
+3166,"Nashua, NH",231262.0
+12126,"Arlington, VA",229534.0
+4201,"Brownsville, TX",227883.0
+909,"Appleton, WI",222222.0
+26618,"Gulfport, MS",221348.0
+14135,"Thousand Oaks, CA",218729.0
+19334,"Avondale, AZ",217192.0
+13786,"San Bernardino, CA",216995.0
+414,"Bremerton, WA",216480.0
+12088,"Roanoke, VA",216177.0
+6912,"Hickory, NC",215353.0
+25295,"Kalamazoo, MI",214083.0
+419,"Tacoma, WA",213418.0
+13778,"Fontana, CA",211815.0
+961,"Green Bay, WI",208625.0
+4239,"College Station, TX",207308.0
+13862,"Moreno Valley, CA",207226.0
+4497,"Amarillo, TX",206072.0
+20147,"Portland, ME",206023.0
+7546,"Fargo, ND",204820.0
+13570,"Santa Barbara, CA",204034.0
+20042,"Norwich, CT",203916.0
+14147,"Glendale, CA",203054.0
+9501,"Yonkers, NY",202019.0
+13349,"Huntington Beach, CA",201874.0
+15532,"Aurora, IL",200965.0
+2686,"Gainesville, FL",199695.0
+164,"Olympia, WA",196078.0
+2386,"North Port, FL",195992.0
+11710,"Spring Valley, NV",195646.0
+1798,"Huntington, WV",194155.0
+2544,"Deltona, FL",194061.0
+11747,"Sunrise Manor, NV",193854.0
+4673,"Grand Prairie, TX",193837.0
+13493,"Salinas, CA",193590.0
+20074,"Waterbury, CT",191484.0
+26090,"Overland Park, KS",191278.0
+5814,"Waco, TX",188448.0
+10771,"Erie, PA",188079.0
+18468,"Cedar Rapids, IA",186160.0
+20521,"Hagerstown, MD",185704.0
+19701,"Tempe, AZ",185038.0
+27503,"Spartanburg, SC",183184.0
+8463,"Clarksville, TN",182849.0
+7368,"Gastonia, NC",180974.0
+21959,"Lorain, OH",180239.0
+28664,"Sioux Falls, SD",180204.0
+2838,"Fort Lauderdale, FL",180072.0
+11974,"Newport News, VA",179388.0
+6696,"High Point, NC",177874.0
+13972,"Santa Cruz, CA",177556.0
+13020,"Rancho Cucamonga, CA",177452.0
+5248,"Frisco, TX",177286.0
+20105,"Danbury, CT",177177.0
+14021,"Hemet, CA",176892.0
+13454,"Oceanside, CA",176193.0
+13894,"Ontario, CA",175841.0
+186,"Vancouver, WA",175673.0
+13854,"Garden Grove, CA",174226.0
+19904,"Nampa, ID",173863.0
+12843,"Vallejo, CA",173844.0
+13353,"Elk Grove, CA",171844.0
+2602,"Pembroke Pines, FL",170712.0
+27048,"Bayamon, PR",170245.0
+28359,"Medford, OR",168219.0
+19708,"Peoria, AZ",168181.0
+13295,"Corona, CA",167836.0
+8560,"Murfreesboro, TN",167055.0
+230,"Marysville, WA",166541.0
+6917,"Cary, NC",165904.0
+12199,"Fredericksburg, VA",164976.0
+2385,"Ocala, FL",164712.0
+3157,"Manchester, NH",160742.0
+13498,"Hayward, CA",160500.0
+25038,"Muskegon, MI",160142.0
+12090,"Alexandria, VA",160035.0
+15928,"Springfield, IL",159394.0
+18005,"Lafayette, IN",159293.0
+4895,"Port Arthur, TX",157934.0
+13515,"Palmdale, CA",157519.0
+15692,"Champaign, IL",156794.0
+17350,"Gainesville, GA",156248.0
+11681,"Enterprise, NV",155773.0
+20583,"Frederick, MD",154972.0
+12602,"Lakewood, CO",154958.0
+14524,"Tuscaloosa, AL",154204.0
+13468,"Sunnyvale, CA",153656.0
+6254,"Lake Charles, LA",153633.0
+2112,"Hollywood, FL",153627.0
+4573,"Pasadena, TX",153520.0
+14054,"Pomona, CA",152939.0
+25679,"Kansas City, KS",152938.0
+17091,"Macon, GA",152663.0
+13436,"Escondido, CA",151969.0
+9319,"Binghamton, NY",150747.0
+17426,"Warner Robins, GA",149617.0
+19249,"New Bedford, MA",149528.0
+25960,"Topeka, KS",148960.0
+4714,"Beaumont, TX",148954.0
+3463,"Paterson, NJ",148678.0
+16836,"Joliet, IL",148462.0
+2795,"Leesburg, FL",148161.0
+17579,"Elkhart, IN",148131.0
+4869,"Odessa, TX",147810.0
+15731,"Naperville, IL",147682.0
+13261,"Fairfield, CA",147582.0
+13117,"Torrance, CA",146758.0
+2682,"Panama City, FL",145239.0
+5992,"Metairie, LA",144822.0
+149,"Bellevue, WA",144444.0
+5711,"Midland, TX",144247.0
+27069,"Carolina, PR",144192.0
+13939,"Merced, CA",144117.0
+4786,"Mesquite, TX",143949.0
+5995,"Houma, LA",142969.0
+1608,"Charleston, WV",142858.0
+13185,"Pasadena, CA",142647.0
+12604,"Pueblo, CO",142351.0
+5566,"Tyler, TX",141116.0
+14042,"Orange, CA",140560.0
+13992,"Fullerton, CA",140392.0
+2879,"Miramar, FL",140328.0
+13733,"Santa Maria, CA",140219.0
+17334,"Athens, GA",140169.0
+23891,"Columbia, MO",139945.0
+19512,"Yuma, AZ",138802.0
+25736,"Olathe, KS",137472.0
+12412,"Thornton, CO",136978.0
+5241,"Harlingen, TX",136968.0
+12411,"Grand Junction, CO",136688.0
+22864,"West Valley City, UT",136170.0
+4933,"Carrollton, TX",135710.0
+13176,"Roseville, CA",135329.0
+25410,"Warren, MI",135022.0
+15817,"Bloomington, IL",134892.0
+12220,"Hampton, VA",134669.0
+19365,"Surprise, AZ",134085.0
+3851,"Las Cruces, NM",133988.0
+12630,"Greeley, CO",133750.0
+66,"Yakima, WA",133233.0
+2684,"Coral Springs, FL",133037.0
+24939,"Sterling Heights, MI",132631.0
+27556,"Mauldin, SC",132402.0
+1116,"Racine, WI",131467.0
+20010,"Stamford, CT",130824.0
+3211,"Elizabeth, NJ",130215.0
+203,"Kent, WA",128458.0
+6757,"Greenville, NC",128385.0
+13130,"Simi Valley, CA",127864.0
+6858,"Burlington, NC",127374.0
+13217,"Santa Clara, CA",127134.0
+8636,"Johnson City, TN",126589.0
+12664,"Boulder, CO",126054.0
+387,"Bellingham, WA",126015.0
+15025,"Fort Smith, AR",125562.0
+12274,"Lynchburg, VA",125004.0
+1105,"Kenosha, WI",124888.0
+13936,"East Los Angeles, CA",123905.0
+25270,"South Lyon, MI",123850.0
+4322,"Round Rock, TX",123678.0
+13616,"Berkeley, CA",122324.0
+26297,"Billings, MT",120800.0
+27166,"Ponce, PR",120295.0
+12948,"Redding, CA",120270.0
+13279,"Yuba City, CA",120186.0
+24157,"Duluth, MN",120101.0
+4437,"Pearland, TX",119940.0
+19219,"Leominster, MA",119400.0
+25332,"Saginaw, MI",119336.0
+19117,"Iowa City, IA",119091.0
+12786,"Arvada, CO",118807.0
+13129,"Seaside, CA",118110.0
+8442,"Kingsport, TN",118001.0
+23011,"Independence, MO",117306.0
+2320,"Lehigh Acres, FL",116849.0
+5849,"Richardson, TX",116783.0
+24542,"Rochester, MN",116713.0
+13432,"Gilroy, CA",116235.0
+12885,"El Monte, CA",116109.0
+27548,"Rock Hill, SC",115963.0
+2353,"Clearwater, FL",115513.0
+6150,"Monroe, LA",115462.0
+696,"Dover, DE",115352.0
+14259,"Carlsbad, CA",115330.0
+20832,"Norman, OK",115065.0
+5333,"Abilene, TX",114964.0
+17652,"Bloomington, IN",114959.0
+4224,"Texas City, TX",114546.0
+13433,"Temecula, CA",114327.0
+9824,"Utica, NY",114318.0
+24756,"St. Cloud, MN",114225.0
+22811,"St. George, UT",113906.0
+22667,"West Jordan, UT",113905.0
+12933,"Costa Mesa, CA",113825.0
+2102,"Miami Gardens, FL",113750.0
+19308,"Cambridge, MA",113630.0
+2125,"Brandon, FL",113124.0
+13531,"Downey, CA",113092.0
+19910,"Coeur d'Alene, ID",112935.0
+12827,"Westminster, CO",112812.0
+16087,"Elgin, IL",112456.0
+13116,"El Centro, CA",112145.0
+18224,"Waterloo, IA",112060.0
+19273,"Lowell, MA",111346.0
+28312,"Gresham, OR",111053.0
+27241,"North Charleston, SC",110861.0
+14255,"San Buenaventura, CA",110790.0
+12858,"Inglewood, CA",110598.0
+2903,"Pompano Beach, FL",110473.0
+12677,"Centennial, CO",110250.0
+2892,"West Palm Beach, FL",110222.0
+109,"Everett, WA",110079.0
+4102,"Santa Fe, NM",110078.0
+13971,"Richmond, CA",110040.0
+13734,"Clovis, CA",109691.0
+5595,"The Woodlands, TX",109608.0
+11610,"Pottstown, PA",109437.0
+7186,"Jacksonville, NC",108872.0
+20716,"Broken Arrow, OK",108303.0
+15459,"Burlington, VT",108277.0
+13015,"West Covina, CA",107598.0
+13528,"Turlock, CA",107208.0
+13463,"Daly City, CA",107074.0
+1340,"Eau Claire, WI",107068.0
+28136,"Hillsboro, OR",106894.0
+17476,"Sandy Springs, GA",106739.0
+18910,"Sioux City, IA",106279.0
+13884,"Chico, CA",106268.0
+13611,"Norwalk, CA",106084.0
+20259,"Salisbury, MD",106034.0
+13787,"Jurupa Valley, CA",106028.0
+4903,"Lewisville, TX",106021.0
+12624,"Highlands Ranch, CO",105264.0
+2788,"Davie, FL",105149.0
+5724,"League City, TX",104903.0
+13146,"Burbank, CA",104834.0
+12993,"San Mateo, CA",104748.0
+2304,"Spring Hill, FL",104722.0
+13885,"El Cajon, CA",103894.0
+13171,"Rialto, CA",103562.0
+28376,"Bend, OR",103349.0
+20625,"Columbia, MD",103170.0
+12112,"Charlottesville, VA",102016.0
+1259,"La Crosse, WI",101886.0
+5377,"Temple, TX",101876.0
+13179,"Vista, CA",101568.0
+484,"Renton, WA",101379.0
+11718,"Sparks, NV",100888.0
+25431,"Holland, MI",100885.0
+13124,"Vacaville, CA",100801.0
+22697,"Logan, UT",100774.0
+4788,"Allen, TX",100685.0
+4687,"Longview, TX",100196.0
+19847,"Meridian, ID",99926.0
+4520,"San Angelo, TX",99890.0
+4407,"Wichita Falls, TX",99617.0
+12676,"Longmont, CO",99398.0
+14067,"Manteca, CA",98736.0
+14285,"Arden-Arcade, CA",98616.0
+2900,"Boca Raton, FL",98150.0
+261,"Spokane Valley, WA",97847.0
+22895,"Orem, UT",97839.0
+21840,"Middletown, OH",97762.0
+13054,"Compton, CA",97612.0
+19872,"Idaho Falls, ID",97548.0
+28405,"Beaverton, OR",97514.0
+7421,"Bismarck, ND",97457.0
+25953,"Lawrence, KS",97341.0
+19713,"Prescott Valley, AZ",97066.0
+359,"Federal Way, WA",96690.0
+13400,"San Marcos, CA",96198.0
+3747,"Rio Rancho, NM",96159.0
+22720,"Sandy, UT",96145.0
+13375,"Tracy, CA",95982.0
+19290,"Brockton, MA",95672.0
+14018,"South Gate, CA",95430.0
+13392,"Hesperia, CA",94859.0
+17093,"Roswell, GA",94786.0
+6040,"Mandeville, LA",94760.0
+3405,"Vineland, NJ",94734.0
+11836,"Portsmouth, VA",94572.0
+25024,"Dearborn, MI",94491.0
+2325,"Sunrise, FL",94323.0
+19277,"Quincy, MA",94166.0
+24896,"Livonia, MI",94105.0
+19328,"Lynn, MA",94063.0
+2083,"Plantation, FL",93909.0
+6167,"Slidell, LA",93882.0
+13345,"Carson, CA",92735.0
+18060,"Terre Haute, IN",92722.0
+12251,"Blacksburg, VA",92573.0
+3152,"Portsmouth, NH",92513.0
+2495,"Miami Beach, FL",92307.0
+13703,"Santa Monica, CA",92306.0
+3156,"Dover, NH",92234.0
+17529,"Carmel, IN",92198.0
+14115,"Hanford, CA",92066.0
+12717,"Lafayette, CO",91985.0
+20925,"Edmond, OK",91950.0
+18129,"Fishers, IN",91832.0
+14320,"Westminster, CA",91564.0
+20582,"Germantown, MD",91447.0
+20969,"Lawton, OK",91383.0
+27416,"Florence, SC",91311.0
+12994,"Livermore, CA",91030.0
+19675,"San Tan Valley, AZ",90665.0
+23008,"Lee's Summit, MO",90597.0
+13953,"Menifee, CA",90595.0
+14312,"San Leandro, CA",90553.0
+17309,"Albany, GA",90515.0
+28083,"Bowling Green, KY",90448.0
+4475,"Edinburg, TX",90280.0
+12184,"Suffolk, VA",90237.0
+26322,"Missoula, MT",90218.0
+13063,"Chino, CA",89797.0
+14644,"Auburn, AL",89577.0
+19257,"Fall River, MA",89420.0
+20006,"Norwalk, CT",89005.0
+15903,"Decatur, IL",88997.0
+19213,"Newton, MA",88994.0
+28663,"Rapid City, SD",88979.0
+17738,"Muncie, IN",88688.0
+280,"Kirkland, WA",88630.0
+4491,"Sugar Land, TX",88485.0
+11446,"State College, PA",88285.0
+2231,"Riverview, FL",88191.0
+2744,"Alafaya, FL",88025.0
+13920,"Citrus Heights, CA",87931.0
+13563,"Hawthorne, CA",87854.0
+25080,"Jackson, MI",87819.0
+16513,"Waukegan, IL",87729.0
+23480,"O'Fallon, MO",87597.0
+14297,"Napa, CA",87032.0
+17025,"Dalton, GA",86841.0
+13331,"Whittier, CA",86838.0
+13842,"Redwood City, CA",86685.0
+27438,"Mount Pleasant, SC",86668.0
+3674,"Clifton, NJ",86607.0
+17651,"Anderson, IN",86481.0
+23414,"Joplin, MO",86298.0
+13215,"Newport Beach, CA",86160.0
+24301,"Bloomington, MN",85866.0
+13979,"Alhambra, CA",85396.0
+14528,"Hoover, AL",84920.0
+2103,"Largo, FL",84754.0
+5150,"Mission, TX",84424.0
+5284,"Conroe, TX",84378.0
+17020,"Johns Creek, GA",84350.0
+13212,"Lake Forest, CA",84293.0
+5166,"Bryan, TX",84021.0
+2756,"Town 'n' Country, FL",83879.0
+25257,"Port Huron, MI",83841.0
+25110,"Troy, MI",83813.0
+12836,"Madera, CA",83636.0
+21773,"Springfield, OH",83286.0
+14045,"Buena Park, CA",83015.0
+13011,"Pleasanton, CA",83007.0
+16731,"Cicero, IL",82552.0
+6089,"Alexandria, LA",82131.0
+2660,"Melbourne, FL",82011.0
+25242,"Westland, MI",81747.0
+13479,"Mountain View, CA",81438.0
+19214,"Somerville, MA",81360.0
+11642,"Cranston, RI",81202.0
+25203,"Farmington Hills, MI",81050.0
+26638,"Hattiesburg, MS",81036.0
+13593,"Lakewood, CA",80967.0
+11647,"Warwick, RI",80871.0
+12255,"Williamsburg, VA",80855.0
+23904,"St. Joseph, MO",80818.0
+343,"Auburn, WA",80776.0
+24648,"Brooklyn Park, MN",80581.0
+2908,"Deerfield Beach, FL",80571.0
+13965,"Tustin, CA",80498.0
+16696,"Alton, IL",80462.0
+13310,"Chino Hills, CA",80374.0
+19269,"Lawrence, MA",80162.0
+5114,"Texarkana, TX",80145.0
+9460,"New Rochelle, NY",79946.0
+2239,"Fort Myers, FL",79943.0
+19450,"Goodyear, AZ",79858.0
+15340,"Springdale, AR",79599.0
+4460,"Pharr, TX",79487.0
+20542,"Silver Spring, MD",79483.0
+17227,"Valdosta, GA",79294.0
+13532,"Alameda, CA",79177.0
+21738,"Parma, OH",79167.0
+4249,"New Braunfels, TX",79152.0
+17961,"Kokomo, IN",79099.0
+22250,"Newark, OH",79025.0
+2982,"Cheyenne, WY",78728.0
+19774,"Flagstaff, AZ",78628.0
+24184,"Plymouth, MN",78395.0
+8507,"Franklin, TN",78321.0
+14632,"Florence, AL",78112.0
+12870,"Milpitas, CA",78106.0
+13312,"Folsom, CA",78038.0
+16396,"Kankakee, IL",78001.0
+10095,"Lebanon, PA",77973.0
+13658,"Perris, CA",77879.0
+13016,"Bellflower, CA",77772.0
+2753,"Boynton Beach, FL",77702.0

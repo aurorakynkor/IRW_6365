@@ -1,0 +1,50 @@
+Farm Workers
+Industrial Engineer
+Construction Laborer
+Carpenters
+Machinist
+Customer Service Representative
+Food Preparation
+Cook
+Police Officer
+Retail Salesperson
+Cashier
+Security Guard
+Bartender
+Human Resources
+Secretaries
+General Manager
+Accountant
+Nurse
+Maintenance Worker
+Office Clerk
+Truck Driver
+Janitor
+Lawyer
+Insurance Broker
+Realtor
+Flight Attendant
+Plumber
+Personal Care Aides
+Tellers
+Legal Assistant
+Counselor
+Paramedic
+Professor
+Pharmacist
+Architecture
+Teacher Assistants
+Elementary School Teacher
+Middle School Teacher
+High School Teacher
+Electrical Engineer
+Mechanical Engineer
+Robotics Engineer
+Data Scientist
+Software Developer
+Biomedical Engineer
+Economist
+Graphic Designer
+Doctor
+IT Technician
+Civil Engineer
