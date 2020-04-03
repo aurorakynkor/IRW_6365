@@ -22,7 +22,7 @@ keywords = []
 # Define Spiders Here
 #
 class MonsterSpider(scrapy.Spider):
-    name = "monster_spider"
+    name = "monster"
 
     def start_requests(self):
         urls = []
@@ -74,7 +74,7 @@ class MonsterSpider(scrapy.Spider):
            
 
 class CareerBuilderSpider(scrapy.Spider):
-    name = "careerbuilder_spider"
+    name = "careerbuilder"
 
     def start_requests(self):
         urls = []
@@ -134,7 +134,7 @@ class CareerBuilderSpider(scrapy.Spider):
             
 
 class SimplyHiredSpider(scrapy.Spider):
-    name = "simplyhired_spider"
+    name = "simplyhired"
 
     def start_requests(self):
         urls = []

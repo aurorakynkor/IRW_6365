@@ -122,8 +122,8 @@ WAUTOTHROTTLE_TARGET_CONCURRENCY = 0.5
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 DB_SETTINGS = {
-    'db': "my_db",
+    'db': "jobdb",
     'user': 'root',
-    'passwd': 'my_pass',
-    'host': '0.0.0.0',
+    'passwd': '',
+    'host': '127.0.0.1',
 }
