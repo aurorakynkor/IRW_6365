@@ -9,8 +9,8 @@ if __name__ == '__main__':
 	
 	top_x_cities['city_state'] = top_x_cities['city'] + ", " + top_x_cities['state_id']
 
-	top_x_cities = top_x_cities[['city_state','population']]
+	top_x_cities = top_x_cities[['city_state','population', 'lat', 'lng']]
 	
 	print(top_x_cities.to_string())
 
-	top_x_cities.to_csv('city_population_data.csv')
+	top_x_cities.to_csv('city_population_lat_lng_data.csv')

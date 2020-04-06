@@ -253,7 +253,3 @@ print(time.time() - start_time)
 print("Keywords:" + str(len(keywords)))
 print("Locations:" + str(len(locations)))
 
-print("SimplyHired Query Count:" + str(sum(1 for line in open('simplyhired_spider.jl'))))
-print("Monster Query Count:" + str(sum(1 for line in open('monster_spider.jl'))))
-print("CareerBuilder Query Count:" + str(sum(1 for line in open('careerbuilder_spider.jl'))))
-

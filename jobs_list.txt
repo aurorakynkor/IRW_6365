@@ -1,18 +1,14 @@
-Farm Workers
-Industrial Engineer
-Construction Laborer
-Carpenters
-Machinist
+Construction
+Carpenter
 Customer Service Representative
 Food Preparation
 Cook
-Police Officer
 Retail Salesperson
 Cashier
 Security Guard
 Bartender
 Human Resources
-Secretaries
+Secretary
 General Manager
 Accountant
 Nurse
@@ -23,28 +19,22 @@ Janitor
 Lawyer
 Insurance Broker
 Realtor
-Flight Attendant
 Plumber
 Personal Care Aides
-Tellers
+Teller
 Legal Assistant
 Counselor
-Paramedic
 Professor
 Pharmacist
-Architecture
-Teacher Assistants
-Elementary School Teacher
-Middle School Teacher
-High School Teacher
+Teacher
 Electrical Engineer
 Mechanical Engineer
-Robotics Engineer
 Data Scientist
 Software Developer
-Biomedical Engineer
-Economist
 Graphic Designer
 Doctor
 IT Technician
 Civil Engineer
+Administrative Assistant
+Warehouse
+Grocery
