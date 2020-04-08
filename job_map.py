@@ -3,6 +3,7 @@ import mysql.connector
 import pandas as pd
 import sys, getopt
 import datetime
+from scrapy.utils.project import get_project_settings
 
 
 def main(argv):
@@ -10,12 +11,10 @@ def main(argv):
     # 4 Data set Options, careerbuilder, simplyhired, monster, aggregate of all 3
     # start_date, end_date
     # Keyword Options
-    # Adjust for Population
     start_date = ""
     end_date = ""
     keyword = ""
     website = ""
-    population = True
     keywords = []
     f = open("jobs_list.txt", "r")
     for x in f:
@@ -64,16 +63,25 @@ if __name__ == "__main__":
     # Get names of all Tables in jobdb
     ##################################
 
-    conn = mysql.connector.connect(db="information_schema", user="root", passwd="", host="127.0.0.1", charset='utf8', use_unicode=True)
+    db_settings = get_project_settings().getdict("DB_SETTINGS")
+    if not db_settings: # if we don't define db config in settings
+        raise NotConfigured # then reaise error
+
+    db = db_settings['db']
+    user = db_settings['user']
+    passwd = db_settings['passwd']
+    host = db_settings['host']
+
+    conn = mysql.connector.connect(db="information_schema", user=user, passwd=passwd, host=host, charset='utf8', use_unicode=True)
     cursor = conn.cursor()
-    sql = "SELECT table_name FROM information_schema.tables WHERE table_schema ='jobdb';"
+    sql = "SELECT table_name FROM information_schema.tables WHERE table_schema ='"+ db +"';"
     cursor.execute(sql)
     
     myresult = cursor.fetchall()
 
     table_name_list = []
-
     for x in myresult:
+
         table_name_list.append(x)
 
     conn.commit()
@@ -94,7 +102,7 @@ if __name__ == "__main__":
 
         if website == "aggregate":
             names = ["careerbuilder", "simplyhired", "monster"]
-            if table_website in name and start_date <= table_date <= end_date:
+            if table_website in names and start_date <= table_date <= end_date:
                 query_table_names.append(table_name)
         else:
             if table_website == website and start_date <= table_date <= end_date:
@@ -103,11 +111,13 @@ if __name__ == "__main__":
     ###########################
     # Query Tables and store in Df
     ###########################
+    df = pd.DataFrame(columns = ['keyword', 'city', 'count'])
 
     for table_name in query_table_names:
-        
+        conn = mysql.connector.connect(db=db, user=user, passwd=passwd, host=host, charset='utf8', use_unicode=True)
+        cursor = conn.cursor()
 
-        sql = "SELECT * FROM jobdb." + table_name + " WHERE keyword = '" + keyword + "';"
+        sql = "SELECT * FROM "+ db +"." + table_name + " WHERE keyword = '" + keyword + "';"
         cursor.execute(sql)
         
         myresult = cursor.fetchall()
@@ -119,8 +129,10 @@ if __name__ == "__main__":
 
         conn.commit()
 
-        df = pd.DataFrame(columns = ['keyword', 'city', 'count'], data=results_list)
-        df.groupby(by=df.columns, axis=1).sum()
+        appenddf = pd.DataFrame(columns = ['keyword', 'city', 'count'], data=results_list)
+        df = df.append(appenddf)
+    
+    df = df.groupby(['keyword','city'], as_index=False)['count'].sum()
 
     location_data = pd.read_csv("city_population_lat_lng_data.csv").reset_index()
 
