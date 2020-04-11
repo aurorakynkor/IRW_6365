@@ -219,13 +219,13 @@ f.close()
 # Load locations from csv
 #
 
-locations = pd.read_csv('city_population_data.csv')['city_state'].to_numpy()
+locations = pd.read_csv('../location_data/city_population_lat_lng_data.csv')['city_state'].to_numpy()
 
 #
 # Load Keywords from csv
 #
 
-f = open("jobs_list.txt", "r")
+f = open("../jobs_list.txt", "r")
 for x in f:
     keywords.append(x)
 #

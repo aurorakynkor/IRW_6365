@@ -134,7 +134,7 @@ if __name__ == "__main__":
     
     df = df.groupby(['keyword','city'], as_index=False)['count'].sum()
 
-    location_data = pd.read_csv("city_population_lat_lng_data.csv").reset_index()
+    location_data = pd.read_csv("location_data/city_population_lat_lng_data.csv").reset_index()
 
     df = df.set_index('city').join(location_data.set_index('city_state')).reset_index()
     df = df.rename(columns={"level_0": "city_state"})
