@@ -1,16 +1,17 @@
 Setup Instructions:
 
-Install Wamp 3.2.0 
+STEP 1: Install Wamp 3.2.0 
 I downloaded wamp a month ago from http://www.wampserver.com/en/ (currently the website is down for some reason)
 https://sourceforge.net/projects/wampserver/
 Under the select components tab, check off MySQL8.0.18
 Click through and install
 Download Github Repo from https://github.com/aurorakynkor/IRW_6365
-Download Python 3.7.4
+
+STEP 2: Download Python 3.7.4
 https://www.python.org/downloads/release/python-374/
 Doublecheck by running python --version
-Install Python Packages
-Install pip
+
+STEP 3: Install Python Packages
 python -m pip install --upgrade pip
 Python -m pip install plotly
 Python -m pip install mysql-connector-python.py
@@ -20,7 +21,8 @@ Python -m pip install requests
 Python -m pip install scrapy-proxies
 Python -m pip install scrapy_random_useragent_pro
 Python -m pip install scrapy_fake_useragent
-Setup DB
+
+STEP 4: Setup DB
 Run Wamp
 Go to your toolbar tray and right click the green wamp icon
 Search for an option called “Invert Default DBMS MariaDB <-> Mysql” and click it
@@ -29,7 +31,9 @@ Login
 User: root
 Password: 
 Server choice: MySQL
-Create DB
+
+STEP 5: Create DB
+
 On left hand side click new
 At the top you should see an option to create Database
 Under Database Name type “jobdb”
@@ -96,3 +100,5 @@ Go to Terminal/Command Prompt
 CD to IRW_6365/location_data
 Type “python location_data.py”
 city_population_lat_lng_data.csv will appear!
+
+
